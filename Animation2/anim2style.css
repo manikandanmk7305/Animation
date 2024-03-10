@@ -1,0 +1,33 @@
+@keyframes change{
+    0%{
+        background-color: aqua;
+        transform: translateY(300px);
+        border-radius: 10%;
+    }
+    50%{
+        background-color: blueviolet;
+        transform: translate(100px);
+        border-radius: 35%;
+    }
+    75%{
+        background-color: gold;
+        transform: translatey(-300px);
+        border-radius: 50%;
+    }
+    100%{
+        background-color: magenta;
+        transform: translate(100px);
+    }
+}
+body{
+    margin-top: 280px;
+    /* margin-bottom: 200px; */
+}
+.box{
+    margin: auto;
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: change 2s infinite ease;
+}
